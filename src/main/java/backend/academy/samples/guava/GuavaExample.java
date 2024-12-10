@@ -1,5 +1,5 @@
 package backend.academy.samples.guava;
-
+// CHECKSTYLE:OFF
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Multimap;

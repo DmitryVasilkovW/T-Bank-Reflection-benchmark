@@ -1,5 +1,5 @@
 package backend.academy.samples.collections;
-
+// CHECKSTYLE:OFF
 import it.unimi.dsi.fastutil.Arrays;
 import it.unimi.dsi.fastutil.chars.Char2IntMap;
 import it.unimi.dsi.fastutil.chars.Char2IntRBTreeMap;

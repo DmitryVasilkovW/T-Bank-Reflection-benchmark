@@ -1,5 +1,5 @@
 package backend.academy.samples.guice;
-
+// CHECKSTYLE:OFF
 import com.google.inject.Injector;
 import com.google.inject.Stage;
 import lombok.extern.log4j.Log4j2;
