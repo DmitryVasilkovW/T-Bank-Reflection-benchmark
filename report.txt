@@ -1,0 +1,623 @@
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-FR
+# VM invoker: /Users/dmitryvasilkov/Library/Java/JavaVirtualMachines/corretto-22.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57912:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 5 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: backend.academy.benchmark.service.ReflectionBenchmark.directAccess
+
+# Run progress: 0,00% complete, ETA 01:06:40
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 0,606 ns/op
+# Warmup Iteration   2: 0,605 ns/op
+# Warmup Iteration   3: 0,613 ns/op
+# Warmup Iteration   4: 0,607 ns/op
+# Warmup Iteration   5: 0,606 ns/op
+# Warmup Iteration   6: 0,607 ns/op
+# Warmup Iteration   7: 0,606 ns/op
+# Warmup Iteration   8: 0,610 ns/op
+# Warmup Iteration   9: 0,614 ns/op
+# Warmup Iteration  10: 0,605 ns/op
+Iteration   1: 0,604 ns/op
+Iteration   2: 0,608 ns/op
+Iteration   3: 0,604 ns/op
+Iteration   4: 0,606 ns/op
+Iteration   5: 0,605 ns/op
+Iteration   6: 0,607 ns/op
+Iteration   7: 0,604 ns/op
+Iteration   8: 0,606 ns/op
+Iteration   9: 0,604 ns/op
+Iteration  10: 0,606 ns/op
+Iteration  11: 0,606 ns/op
+Iteration  12: 0,605 ns/op
+Iteration  13: 0,609 ns/op
+Iteration  14: 0,605 ns/op
+Iteration  15: 0,605 ns/op
+Iteration  16: 0,606 ns/op
+Iteration  17: 0,605 ns/op
+Iteration  18: 0,606 ns/op
+Iteration  19: 0,606 ns/op
+Iteration  20: 0,609 ns/op
+
+# Run progress: 6,25% complete, ETA 01:07:21
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,615 ns/op
+# Warmup Iteration   2: 0,617 ns/op
+# Warmup Iteration   3: 0,619 ns/op
+# Warmup Iteration   4: 0,618 ns/op
+# Warmup Iteration   5: 0,618 ns/op
+# Warmup Iteration   6: 0,628 ns/op
+# Warmup Iteration   7: 0,631 ns/op
+# Warmup Iteration   8: 0,624 ns/op
+# Warmup Iteration   9: 0,624 ns/op
+# Warmup Iteration  10: 0,632 ns/op
+Iteration   1: 0,620 ns/op
+Iteration   2: 0,618 ns/op
+Iteration   3: 0,604 ns/op
+Iteration   4: 0,604 ns/op
+Iteration   5: 0,605 ns/op
+Iteration   6: 0,606 ns/op
+Iteration   7: 0,608 ns/op
+Iteration   8: 0,613 ns/op
+Iteration   9: 0,608 ns/op
+Iteration  10: 0,608 ns/op
+Iteration  11: 0,614 ns/op
+Iteration  12: 0,606 ns/op
+Iteration  13: 0,612 ns/op
+Iteration  14: 0,615 ns/op
+Iteration  15: 0,615 ns/op
+Iteration  16: 0,618 ns/op
+Iteration  17: 0,616 ns/op
+Iteration  18: 0,608 ns/op
+Iteration  19: 0,612 ns/op
+Iteration  20: 0,612 ns/op
+
+# Run progress: 12,50% complete, ETA 01:02:52
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,611 ns/op
+# Warmup Iteration   2: 0,611 ns/op
+# Warmup Iteration   3: 0,612 ns/op
+# Warmup Iteration   4: 0,609 ns/op
+# Warmup Iteration   5: 0,609 ns/op
+# Warmup Iteration   6: 0,611 ns/op
+# Warmup Iteration   7: 0,610 ns/op
+# Warmup Iteration   8: 0,619 ns/op
+# Warmup Iteration   9: 0,617 ns/op
+# Warmup Iteration  10: 0,621 ns/op
+Iteration   1: 0,635 ns/op
+Iteration   2: 0,613 ns/op
+Iteration   3: 0,620 ns/op
+Iteration   4: 0,619 ns/op
+Iteration   5: 0,612 ns/op
+Iteration   6: 0,615 ns/op
+Iteration   7: 0,633 ns/op
+Iteration   8: 0,615 ns/op
+Iteration   9: 0,621 ns/op
+Iteration  10: 0,618 ns/op
+Iteration  11: 0,611 ns/op
+Iteration  12: 0,614 ns/op
+Iteration  13: 0,608 ns/op
+Iteration  14: 0,611 ns/op
+Iteration  15: 0,619 ns/op
+Iteration  16: 0,612 ns/op
+Iteration  17: 0,608 ns/op
+Iteration  18: 0,608 ns/op
+Iteration  19: 0,616 ns/op
+Iteration  20: 0,607 ns/op
+
+# Run progress: 18,75% complete, ETA 00:58:24
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,610 ns/op
+# Warmup Iteration   2: 0,611 ns/op
+# Warmup Iteration   3: 0,613 ns/op
+# Warmup Iteration   4: 0,608 ns/op
+# Warmup Iteration   5: 0,608 ns/op
+# Warmup Iteration   6: 0,615 ns/op
+# Warmup Iteration   7: 0,610 ns/op
+# Warmup Iteration   8: 0,610 ns/op
+# Warmup Iteration   9: 0,618 ns/op
+# Warmup Iteration  10: 0,611 ns/op
+Iteration   1: 0,613 ns/op
+Iteration   2: 0,609 ns/op
+Iteration   3: 0,612 ns/op
+Iteration   4: 0,609 ns/op
+Iteration   5: 0,611 ns/op
+Iteration   6: 0,610 ns/op
+Iteration   7: 0,607 ns/op
+Iteration   8: 0,608 ns/op
+Iteration   9: 0,607 ns/op
+Iteration  10: 0,610 ns/op
+Iteration  11: 0,607 ns/op
+Iteration  12: 0,615 ns/op
+Iteration  13: 0,608 ns/op
+Iteration  14: 0,615 ns/op
+Iteration  15: 0,607 ns/op
+Iteration  16: 0,612 ns/op
+Iteration  17: 0,608 ns/op
+Iteration  18: 0,613 ns/op
+Iteration  19: 0,610 ns/op
+Iteration  20: 0,609 ns/op
+
+
+Result "backend.academy.benchmark.service.ReflectionBenchmark.directAccess":
+0,612 ±(99.9%) 0,003 ns/op [Average]
+(min, avg, max) = (0,604, 0,612, 0,635), stdev = 0,006
+CI (99.9%): [0,610, 0,615] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-FR
+# VM invoker: /Users/dmitryvasilkov/Library/Java/JavaVirtualMachines/corretto-22.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57912:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 5 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: backend.academy.benchmark.service.ReflectionBenchmark.lambdaMetafactory
+
+# Run progress: 25,00% complete, ETA 00:53:55
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 0,856 ns/op
+# Warmup Iteration   2: 0,853 ns/op
+# Warmup Iteration   3: 0,860 ns/op
+# Warmup Iteration   4: 0,861 ns/op
+# Warmup Iteration   5: 0,854 ns/op
+# Warmup Iteration   6: 0,856 ns/op
+# Warmup Iteration   7: 0,886 ns/op
+# Warmup Iteration   8: 0,902 ns/op
+# Warmup Iteration   9: 0,906 ns/op
+# Warmup Iteration  10: 0,900 ns/op
+Iteration   1: 0,895 ns/op
+Iteration   2: 0,888 ns/op
+Iteration   3: 0,885 ns/op
+Iteration   4: 0,884 ns/op
+Iteration   5: 0,903 ns/op
+Iteration   6: 0,883 ns/op
+Iteration   7: 0,889 ns/op
+Iteration   8: 0,888 ns/op
+Iteration   9: 0,885 ns/op
+Iteration  10: 0,889 ns/op
+Iteration  11: 0,896 ns/op
+Iteration  12: 0,883 ns/op
+Iteration  13: 0,884 ns/op
+Iteration  14: 0,883 ns/op
+Iteration  15: 0,884 ns/op
+Iteration  16: 0,885 ns/op
+Iteration  17: 0,882 ns/op
+Iteration  18: 0,881 ns/op
+Iteration  19: 0,904 ns/op
+Iteration  20: 0,881 ns/op
+
+# Run progress: 31,25% complete, ETA 00:49:25
+# Fork: 1 of 3
+# Warmup Iteration   1: 0,885 ns/op
+# Warmup Iteration   2: 0,884 ns/op
+# Warmup Iteration   3: 0,887 ns/op
+# Warmup Iteration   4: 0,883 ns/op
+# Warmup Iteration   5: 0,886 ns/op
+# Warmup Iteration   6: 0,885 ns/op
+# Warmup Iteration   7: 0,886 ns/op
+# Warmup Iteration   8: 0,884 ns/op
+# Warmup Iteration   9: 0,884 ns/op
+# Warmup Iteration  10: 0,883 ns/op
+Iteration   1: 0,882 ns/op
+Iteration   2: 0,884 ns/op
+Iteration   3: 0,883 ns/op
+Iteration   4: 0,882 ns/op
+Iteration   5: 0,916 ns/op
+Iteration   6: 0,882 ns/op
+Iteration   7: 0,883 ns/op
+Iteration   8: 0,887 ns/op
+Iteration   9: 0,882 ns/op
+Iteration  10: 0,883 ns/op
+Iteration  11: 0,883 ns/op
+Iteration  12: 0,883 ns/op
+Iteration  13: 0,882 ns/op
+Iteration  14: 0,883 ns/op
+Iteration  15: 0,882 ns/op
+Iteration  16: 0,904 ns/op
+Iteration  17: 0,884 ns/op
+Iteration  18: 0,884 ns/op
+Iteration  19: 0,890 ns/op
+Iteration  20: 0,885 ns/op
+
+# Run progress: 37,50% complete, ETA 00:44:55
+# Fork: 2 of 3
+# Warmup Iteration   1: 0,884 ns/op
+# Warmup Iteration   2: 0,887 ns/op
+# Warmup Iteration   3: 0,886 ns/op
+# Warmup Iteration   4: 0,887 ns/op
+# Warmup Iteration   5: 0,886 ns/op
+# Warmup Iteration   6: 0,886 ns/op
+# Warmup Iteration   7: 0,886 ns/op
+# Warmup Iteration   8: 0,887 ns/op
+# Warmup Iteration   9: 0,889 ns/op
+# Warmup Iteration  10: 0,900 ns/op
+Iteration   1: 0,884 ns/op
+Iteration   2: 0,907 ns/op
+Iteration   3: 0,886 ns/op
+Iteration   4: 0,885 ns/op
+Iteration   5: 0,889 ns/op
+Iteration   6: 0,889 ns/op
+Iteration   7: 0,885 ns/op
+Iteration   8: 0,888 ns/op
+Iteration   9: 0,886 ns/op
+Iteration  10: 0,885 ns/op
+Iteration  11: 0,885 ns/op
+Iteration  12: 0,890 ns/op
+Iteration  13: 0,900 ns/op
+Iteration  14: 0,892 ns/op
+Iteration  15: 0,885 ns/op
+Iteration  16: 0,887 ns/op
+Iteration  17: 0,891 ns/op
+Iteration  18: 0,886 ns/op
+Iteration  19: 0,888 ns/op
+Iteration  20: 0,885 ns/op
+
+# Run progress: 43,75% complete, ETA 00:40:26
+# Fork: 3 of 3
+# Warmup Iteration   1: 0,887 ns/op
+# Warmup Iteration   2: 0,888 ns/op
+# Warmup Iteration   3: 0,892 ns/op
+# Warmup Iteration   4: 0,888 ns/op
+# Warmup Iteration   5: 0,886 ns/op
+# Warmup Iteration   6: 0,887 ns/op
+# Warmup Iteration   7: 0,888 ns/op
+# Warmup Iteration   8: 0,919 ns/op
+# Warmup Iteration   9: 0,896 ns/op
+# Warmup Iteration  10: 0,885 ns/op
+Iteration   1: 0,885 ns/op
+Iteration   2: 0,891 ns/op
+Iteration   3: 0,885 ns/op
+Iteration   4: 0,886 ns/op
+Iteration   5: 0,887 ns/op
+Iteration   6: 0,886 ns/op
+Iteration   7: 0,889 ns/op
+Iteration   8: 0,886 ns/op
+Iteration   9: 0,883 ns/op
+Iteration  10: 0,885 ns/op
+Iteration  11: 0,905 ns/op
+Iteration  12: 0,889 ns/op
+Iteration  13: 0,896 ns/op
+Iteration  14: 0,887 ns/op
+Iteration  15: 0,886 ns/op
+Iteration  16: 0,888 ns/op
+Iteration  17: 0,889 ns/op
+Iteration  18: 0,886 ns/op
+Iteration  19: 0,885 ns/op
+Iteration  20: 0,885 ns/op
+
+
+Result "backend.academy.benchmark.service.ReflectionBenchmark.lambdaMetafactory":
+0,888 ±(99.9%) 0,003 ns/op [Average]
+(min, avg, max) = (0,882, 0,888, 0,916), stdev = 0,007
+CI (99.9%): [0,885, 0,891] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-FR
+# VM invoker: /Users/dmitryvasilkov/Library/Java/JavaVirtualMachines/corretto-22.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57912:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 5 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: backend.academy.benchmark.service.ReflectionBenchmark.methodHandles
+
+# Run progress: 50,00% complete, ETA 00:35:56
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 4,128 ns/op
+# Warmup Iteration   2: 4,456 ns/op
+# Warmup Iteration   3: 3,965 ns/op
+# Warmup Iteration   4: 3,788 ns/op
+# Warmup Iteration   5: 3,771 ns/op
+# Warmup Iteration   6: 3,758 ns/op
+# Warmup Iteration   7: 3,766 ns/op
+# Warmup Iteration   8: 3,780 ns/op
+# Warmup Iteration   9: 3,768 ns/op
+# Warmup Iteration  10: 3,732 ns/op
+Iteration   1: 3,620 ns/op
+Iteration   2: 3,618 ns/op
+Iteration   3: 3,631 ns/op
+Iteration   4: 3,669 ns/op
+Iteration   5: 3,712 ns/op
+Iteration   6: 3,665 ns/op
+Iteration   7: 3,680 ns/op
+Iteration   8: 3,818 ns/op
+Iteration   9: 3,701 ns/op
+Iteration  10: 3,678 ns/op
+Iteration  11: 3,680 ns/op
+Iteration  12: 3,681 ns/op
+Iteration  13: 3,679 ns/op
+Iteration  14: 3,689 ns/op
+Iteration  15: 3,684 ns/op
+Iteration  16: 3,684 ns/op
+Iteration  17: 3,691 ns/op
+Iteration  18: 3,678 ns/op
+Iteration  19: 3,677 ns/op
+Iteration  20: 3,681 ns/op
+
+# Run progress: 56,25% complete, ETA 00:31:27
+# Fork: 1 of 3
+# Warmup Iteration   1: 4,057 ns/op
+# Warmup Iteration   2: 4,413 ns/op
+# Warmup Iteration   3: 3,727 ns/op
+# Warmup Iteration   4: 3,710 ns/op
+# Warmup Iteration   5: 3,718 ns/op
+# Warmup Iteration   6: 3,723 ns/op
+# Warmup Iteration   7: 3,699 ns/op
+# Warmup Iteration   8: 3,695 ns/op
+# Warmup Iteration   9: 3,743 ns/op
+# Warmup Iteration  10: 3,730 ns/op
+Iteration   1: 3,691 ns/op
+Iteration   2: 3,687 ns/op
+Iteration   3: 3,700 ns/op
+Iteration   4: 3,720 ns/op
+Iteration   5: 3,714 ns/op
+Iteration   6: 3,704 ns/op
+Iteration   7: 3,688 ns/op
+Iteration   8: 3,736 ns/op
+Iteration   9: 3,685 ns/op
+Iteration  10: 3,720 ns/op
+Iteration  11: 3,715 ns/op
+Iteration  12: 3,707 ns/op
+Iteration  13: 3,712 ns/op
+Iteration  14: 3,704 ns/op
+Iteration  15: 3,718 ns/op
+Iteration  16: 3,710 ns/op
+Iteration  17: 3,696 ns/op
+Iteration  18: 3,766 ns/op
+Iteration  19: 3,713 ns/op
+Iteration  20: 3,712 ns/op
+
+# Run progress: 62,50% complete, ETA 00:26:57
+# Fork: 2 of 3
+# Warmup Iteration   1: 4,074 ns/op
+# Warmup Iteration   2: 4,326 ns/op
+# Warmup Iteration   3: 3,616 ns/op
+# Warmup Iteration   4: 3,635 ns/op
+# Warmup Iteration   5: 3,648 ns/op
+# Warmup Iteration   6: 3,626 ns/op
+# Warmup Iteration   7: 3,632 ns/op
+# Warmup Iteration   8: 3,616 ns/op
+# Warmup Iteration   9: 3,638 ns/op
+# Warmup Iteration  10: 3,618 ns/op
+Iteration   1: 3,625 ns/op
+Iteration   2: 3,636 ns/op
+Iteration   3: 3,646 ns/op
+Iteration   4: 3,630 ns/op
+Iteration   5: 3,620 ns/op
+Iteration   6: 3,607 ns/op
+Iteration   7: 3,603 ns/op
+Iteration   8: 3,655 ns/op
+Iteration   9: 3,613 ns/op
+Iteration  10: 3,620 ns/op
+Iteration  11: 3,636 ns/op
+Iteration  12: 3,616 ns/op
+Iteration  13: 3,616 ns/op
+Iteration  14: 3,659 ns/op
+Iteration  15: 3,614 ns/op
+Iteration  16: 3,613 ns/op
+Iteration  17: 3,616 ns/op
+Iteration  18: 3,617 ns/op
+Iteration  19: 3,618 ns/op
+Iteration  20: 3,607 ns/op
+
+# Run progress: 68,75% complete, ETA 00:22:28
+# Fork: 3 of 3
+# Warmup Iteration   1: 4,045 ns/op
+# Warmup Iteration   2: 4,283 ns/op
+# Warmup Iteration   3: 3,630 ns/op
+# Warmup Iteration   4: 3,637 ns/op
+# Warmup Iteration   5: 3,633 ns/op
+# Warmup Iteration   6: 3,622 ns/op
+# Warmup Iteration   7: 3,671 ns/op
+# Warmup Iteration   8: 3,655 ns/op
+# Warmup Iteration   9: 3,634 ns/op
+# Warmup Iteration  10: 3,622 ns/op
+Iteration   1: 3,608 ns/op
+Iteration   2: 3,690 ns/op
+Iteration   3: 3,640 ns/op
+Iteration   4: 3,683 ns/op
+Iteration   5: 3,720 ns/op
+Iteration   6: 3,677 ns/op
+Iteration   7: 3,678 ns/op
+Iteration   8: 3,691 ns/op
+Iteration   9: 3,683 ns/op
+Iteration  10: 3,671 ns/op
+Iteration  11: 3,721 ns/op
+Iteration  12: 3,671 ns/op
+Iteration  13: 3,680 ns/op
+Iteration  14: 3,695 ns/op
+Iteration  15: 3,699 ns/op
+Iteration  16: 3,687 ns/op
+Iteration  17: 3,690 ns/op
+Iteration  18: 3,689 ns/op
+Iteration  19: 3,678 ns/op
+Iteration  20: 3,690 ns/op
+
+
+Result "backend.academy.benchmark.service.ReflectionBenchmark.methodHandles":
+3,672 ±(99.9%) 0,018 ns/op [Average]
+(min, avg, max) = (3,603, 3,672, 3,766), stdev = 0,041
+CI (99.9%): [3,653, 3,690] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-FR
+# VM invoker: /Users/dmitryvasilkov/Library/Java/JavaVirtualMachines/corretto-22.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57912:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, 5 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: backend.academy.benchmark.service.ReflectionBenchmark.reflection
+
+# Run progress: 75,00% complete, ETA 00:17:58
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 7,563 ns/op
+# Warmup Iteration   2: 8,394 ns/op
+# Warmup Iteration   3: 8,128 ns/op
+# Warmup Iteration   4: 8,102 ns/op
+# Warmup Iteration   5: 8,051 ns/op
+# Warmup Iteration   6: 8,181 ns/op
+# Warmup Iteration   7: 8,183 ns/op
+# Warmup Iteration   8: 8,127 ns/op
+# Warmup Iteration   9: 8,164 ns/op
+# Warmup Iteration  10: 8,201 ns/op
+Iteration   1: 8,100 ns/op
+Iteration   2: 8,086 ns/op
+Iteration   3: 8,070 ns/op
+Iteration   4: 8,213 ns/op
+Iteration   5: 8,229 ns/op
+Iteration   6: 8,049 ns/op
+Iteration   7: 7,955 ns/op
+Iteration   8: 7,996 ns/op
+Iteration   9: 8,489 ns/op
+Iteration  10: 11,879 ns/op
+Iteration  11: 8,744 ns/op
+Iteration  12: 11,977 ns/op
+Iteration  13: 15,387 ns/op
+Iteration  14: 11,722 ns/op
+Iteration  15: 8,749 ns/op
+Iteration  16: 8,648 ns/op
+Iteration  17: 8,312 ns/op
+Iteration  18: 8,540 ns/op
+Iteration  19: 9,986 ns/op
+Iteration  20: 8,787 ns/op
+
+# Run progress: 81,25% complete, ETA 00:13:28
+# Fork: 1 of 3
+# Warmup Iteration   1: 7,667 ns/op
+# Warmup Iteration   2: 7,966 ns/op
+# Warmup Iteration   3: 8,196 ns/op
+# Warmup Iteration   4: 8,221 ns/op
+# Warmup Iteration   5: 8,341 ns/op
+# Warmup Iteration   6: 8,044 ns/op
+# Warmup Iteration   7: 8,098 ns/op
+# Warmup Iteration   8: 8,328 ns/op
+# Warmup Iteration   9: 8,006 ns/op
+# Warmup Iteration  10: 8,007 ns/op
+Iteration   1: 8,032 ns/op
+Iteration   2: 8,715 ns/op
+Iteration   3: 8,834 ns/op
+Iteration   4: 8,646 ns/op
+Iteration   5: 8,660 ns/op
+Iteration   6: 8,675 ns/op
+Iteration   7: 8,685 ns/op
+Iteration   8: 8,739 ns/op
+Iteration   9: 8,641 ns/op
+Iteration  10: 8,669 ns/op
+Iteration  11: 8,703 ns/op
+Iteration  12: 8,632 ns/op
+Iteration  13: 8,641 ns/op
+Iteration  14: 8,670 ns/op
+Iteration  15: 8,717 ns/op
+Iteration  16: 8,635 ns/op
+Iteration  17: 8,710 ns/op
+Iteration  18: 8,642 ns/op
+Iteration  19: 7,941 ns/op
+Iteration  20: 7,974 ns/op
+
+# Run progress: 87,50% complete, ETA 00:08:59
+# Fork: 2 of 3
+# Warmup Iteration   1: 7,532 ns/op
+# Warmup Iteration   2: 7,780 ns/op
+# Warmup Iteration   3: 8,081 ns/op
+# Warmup Iteration   4: 7,993 ns/op
+# Warmup Iteration   5: 7,949 ns/op
+# Warmup Iteration   6: 7,914 ns/op
+# Warmup Iteration   7: 7,937 ns/op
+# Warmup Iteration   8: 8,004 ns/op
+# Warmup Iteration   9: 8,053 ns/op
+# Warmup Iteration  10: 8,005 ns/op
+Iteration   1: 8,007 ns/op
+Iteration   2: 7,933 ns/op
+Iteration   3: 8,011 ns/op
+Iteration   4: 7,953 ns/op
+Iteration   5: 7,932 ns/op
+Iteration   6: 7,981 ns/op
+Iteration   7: 8,027 ns/op
+Iteration   8: 8,041 ns/op
+Iteration   9: 8,007 ns/op
+Iteration  10: 7,998 ns/op
+Iteration  11: 8,004 ns/op
+Iteration  12: 7,974 ns/op
+Iteration  13: 8,088 ns/op
+Iteration  14: 8,147 ns/op
+Iteration  15: 8,131 ns/op
+Iteration  16: 8,146 ns/op
+Iteration  17: 8,154 ns/op
+Iteration  18: 8,116 ns/op
+Iteration  19: 8,165 ns/op
+Iteration  20: 8,093 ns/op
+
+# Run progress: 93,75% complete, ETA 00:04:29
+# Fork: 3 of 3
+# Warmup Iteration   1: 7,725 ns/op
+# Warmup Iteration   2: 8,521 ns/op
+# Warmup Iteration   3: 8,096 ns/op
+# Warmup Iteration   4: 8,068 ns/op
+# Warmup Iteration   5: 8,061 ns/op
+# Warmup Iteration   6: 8,062 ns/op
+# Warmup Iteration   7: 8,021 ns/op
+# Warmup Iteration   8: 8,447 ns/op
+# Warmup Iteration   9: 8,032 ns/op
+# Warmup Iteration  10: 8,009 ns/op
+Iteration   1: 8,031 ns/op
+Iteration   2: 8,915 ns/op
+Iteration   3: 8,730 ns/op
+Iteration   4: 8,762 ns/op
+Iteration   5: 8,800 ns/op
+Iteration   6: 8,759 ns/op
+Iteration   7: 8,848 ns/op
+Iteration   8: 9,216 ns/op
+Iteration   9: 8,845 ns/op
+Iteration  10: 9,079 ns/op
+Iteration  11: 8,954 ns/op
+Iteration  12: 8,720 ns/op
+Iteration  13: 8,927 ns/op
+Iteration  14: 8,784 ns/op
+Iteration  15: 8,784 ns/op
+Iteration  16: 9,160 ns/op
+Iteration  17: 9,028 ns/op
+Iteration  18: 8,758 ns/op
+Iteration  19: 8,192 ns/op
+Iteration  20: 8,079 ns/op
+
+
+Result "backend.academy.benchmark.service.ReflectionBenchmark.reflection":
+8,464 ±(99.9%) 0,175 ns/op [Average]
+(min, avg, max) = (7,932, 8,464, 9,216), stdev = 0,391
+CI (99.9%): [8,290, 8,639] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:11:53
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                              Mode  Cnt  Score   Error  Units
+ReflectionBenchmark.directAccess       avgt   60  0,612 ± 0,003  ns/op
+ReflectionBenchmark.lambdaMetafactory  avgt   60  0,888 ± 0,003  ns/op
+ReflectionBenchmark.methodHandles      avgt   60  3,672 ± 0,018  ns/op
+ReflectionBenchmark.reflection         avgt   60  8,464 ± 0,175  ns/op
