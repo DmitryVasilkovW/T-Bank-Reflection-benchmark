@@ -7,6 +7,12 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.runner.options.TimeValue;
+import static backend.academy.benchmark.model.BenchmarkParameters.FORKS;
+import static backend.academy.benchmark.model.BenchmarkParameters.MEASUREMENT_ITERATIONS;
+import static backend.academy.benchmark.model.BenchmarkParameters.MEASUREMENT_TIME_SECONDS;
+import static backend.academy.benchmark.model.BenchmarkParameters.WARMUP_FORKS;
+import static backend.academy.benchmark.model.BenchmarkParameters.WARMUP_ITERATIONS;
+import static backend.academy.benchmark.model.BenchmarkParameters.WARMUP_TIME_SECONDS;
 
 @UtilityClass
 public class Main {
@@ -15,12 +21,12 @@ public class Main {
                 .include(ReflectionBenchmark.class.getSimpleName())
                 .shouldFailOnError(true)
                 .shouldDoGC(true)
-                .forks(1)
-                .warmupForks(1)
-                .warmupIterations(5)
-                .warmupTime(TimeValue.seconds(5))
-                .measurementIterations(10)
-                .measurementTime(TimeValue.seconds(5))
+                .forks(FORKS)
+                .warmupForks(WARMUP_FORKS)
+                .warmupIterations(WARMUP_ITERATIONS)
+                .warmupTime(TimeValue.seconds(WARMUP_TIME_SECONDS))
+                .measurementIterations(MEASUREMENT_ITERATIONS)
+                .measurementTime(TimeValue.seconds(MEASUREMENT_TIME_SECONDS))
                 .build();
 
         new Runner(options).run();
